@@ -1,8 +1,8 @@
-function Button({handleClick, text}) {
+function Button({handleClick, text, handleChange}) {
     return(
         <div>
-             <button onClick={handleClick}>{text}</button> 
-             
+            <input type={text} onChange= {handleChange}></input>
+            <button onClick={handleClick}>{text}</button> 
         </div>
     )
 }

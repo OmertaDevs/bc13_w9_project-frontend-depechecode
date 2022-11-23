@@ -6,10 +6,17 @@ import React, {useState} from "react"
 
 function App() {
   const[displayList, setDisplayList] = useState("")
+  const[text, setText] = useState("")
+
+  function handleChange(event) {
+    const newText = event.target.value;
+    setText(newText)
+  }
+
 
   function handleClick() {
     
-    setDisplayList("React")
+    setDisplayList({text})
     console.log(displayList)
   }
 
