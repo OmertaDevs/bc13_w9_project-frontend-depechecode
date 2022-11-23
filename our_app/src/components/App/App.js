@@ -1,20 +1,22 @@
 import './App.css';
 import Button from '../Button/button'
-import List from '../List/list'
+import SubjectViewer from '../SubjectViewer/subjectviewer'
 
 import React, {useState} from "react"
 
 function App() {
   const[displayList, setDisplayList] = useState("")
 
-  function handleclick() {
-    setDisplayList(List)
+  function handleClick() {
+    
+    setDisplayList("React")
+    console.log(displayList)
   }
 
   return (
     <div className="App">
-      <Button handleClick = {handleclick} text= "search"/>
-      <List/>
+      <Button handleClick = {handleClick} text= "search"/>
+      <SubjectViewer></SubjectViewer>
     </div>
   );
 }
