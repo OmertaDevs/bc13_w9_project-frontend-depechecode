@@ -22,9 +22,9 @@ function App() {
   return (
     <div className="App">
         <Header></Header>
-        <Button classname= "search"handleClick = {handleClick} handleChange = {handleChange}/>
+        <Button handleClick = {handleClick} handleChange = {handleChange}/>
       <SubjectViewer displayList = {displayList}></SubjectViewer>
-      <Linkbar classname= "sidebar"/>
+      <Linkbar/>
     </div>
 
 

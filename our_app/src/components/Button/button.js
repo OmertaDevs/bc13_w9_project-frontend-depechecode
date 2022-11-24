@@ -1,6 +1,6 @@
 function Button({handleClick, handleChange}) {
     return(
-        <div classname= "search-container">
+        <div>
             <input onChange= {handleChange} placeholder= "search"></input>
             <button onClick={handleClick}>Search</button> 
         </div>
