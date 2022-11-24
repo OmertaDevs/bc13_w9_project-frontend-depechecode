@@ -6,7 +6,7 @@ import React, {useState} from "react"
 import Linkbar from '../Linkbar/linkbar'
 
 function App() {
-  const[displayList, setDisplayList] = useState("")
+  const[displayList, setDisplayList] = useState(null)
   const[text, setText] = useState("")
 
   function handleChange(event) {
@@ -15,16 +15,14 @@ function App() {
   }
 
   function handleClick() {
-    
-    setDisplayList({text})
-    console.log(displayList)
+    setDisplayList(text)
   }
 
   return (
     <div className="App">
-      <Button handleClick = {handleClick} text= "search"/>
-      <SubjectViewer></SubjectViewer>
       <Linkbar />
+      <Button handleClick = {handleClick} handleChange = {handleChange}/>
+      <SubjectViewer displayList = {displayList}></SubjectViewer>
     </div>
 
 
