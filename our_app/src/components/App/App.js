@@ -13,7 +13,6 @@ function App() {
     setText(newText)
   }
 
-
   function handleClick() {
     
     setDisplayList({text})
