@@ -1,8 +1,8 @@
-function Button({handleClick, handleChange}) {
+const Button=({onClick, onChange})=> {
     return(
         <div>
-            <input onChange= {handleChange} placeholder= "What do you want to recap?"></input>
-            <button onClick={handleClick}>Search</button> 
+            <input onChange= {onChange} placeholder= "What do you want to recap?"></input>
+            <button onClick={onClick}>Search</button> 
         </div>
     )
 }
