@@ -1,0 +1,61 @@
+/* @media only screen and(max-width: 600px){
+    .link-container{
+     display: flex;
+     flex-direction: row;
+     background-color: #f2f2f2;
+     height: 15%;
+     width: 100vh;
+     justify-content: flex-start;
+     border-style: solid;
+     border-color: #2B061E;
+     
+ }
+ }
+
+@media only screen and (min-width: 600px){
+    .link-container{
+        bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #f2f2f2;
+    height: 100 vh;
+    width: 15%;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: #2B061E;
+    border-radius: 10px;
+    padding: 5px;
+}
+} */
+
+
+    .link-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    height: 100 vh;
+    width: 10%;
+    justify-content: center;
+    border-style: solid;
+    border-color: #2B061E;
+    border-radius: 10px;
+    border-width:0.75px;
+    padding: 5px;
+} 
+
+.git{
+    padding:10px;
+}
+
+.zoom{
+    padding:10px
+}
+
+.notion{
+    padding:10px
+}
+
+.slack{
+    padding:10px
+}
