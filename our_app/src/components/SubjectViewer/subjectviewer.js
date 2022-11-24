@@ -5,7 +5,7 @@ function SubjectViewer({displayList}){
    
     useEffect(() =>{
         async function getSubject(){
-            const response = await fetch(`http://localhost:3000/api/v1/subject?search=react`, {headers: {accept: "application/json", origin: "*"}})
+            const response = await fetch(`http://localhost:3000/api/v1/subject?search=${displayList}`, {headers: {accept: "application/json"}})
             const data = await response.json()
             console.log(data)
             setData(data)

@@ -5,7 +5,7 @@ import SubjectViewer from '../SubjectViewer/subjectviewer'
 import React, {useState} from "react"
 
 function App() {
-  const[displayList, setDisplayList] = useState("")
+  const[displayList, setDisplayList] = useState(null)
   const[text, setText] = useState("")
 
   function handleChange(event) {
@@ -14,15 +14,13 @@ function App() {
   }
 
   function handleClick() {
-    
-    setDisplayList({text})
-    console.log(displayList)
+    setDisplayList(text)
   }
 
   return (
     <div className="App">
-      <Button handleClick = {handleClick} text= "search"/>
-      <SubjectViewer></SubjectViewer>
+      <Button handleClick = {handleClick} handleChange = {handleChange}/>
+      <SubjectViewer displayList = {displayList}></SubjectViewer>
     </div>
   );
 }
