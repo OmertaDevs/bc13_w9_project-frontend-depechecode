@@ -1,6 +1,7 @@
 import './App.css';
 import Button from '../Button/button'
 import SubjectViewer from '../SubjectViewer/subjectviewer'
+import Header from "../Header/header.js"
 
 import React, {useState} from "react"
 import Linkbar from '../Linkbar/linkbar'
@@ -20,9 +21,10 @@ function App() {
 
   return (
     <div className="App">
-      <Linkbar />
-      <Button handleClick = {handleClick} handleChange = {handleChange}/>
+        <Header></Header>
+        <Button classname= "search"handleClick = {handleClick} handleChange = {handleChange}/>
       <SubjectViewer displayList = {displayList}></SubjectViewer>
+      <Linkbar classname= "sidebar"/>
     </div>
 
 
