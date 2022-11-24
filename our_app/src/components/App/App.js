@@ -5,19 +5,19 @@ import SubjectViewer from '../SubjectViewer/subjectviewer'
 import Header from "../Header/header.js"
 import Linkbar from '../Linkbar/linkbar'
 
-const App=()=> {
+const App = ()=> {
   const[displayList, setDisplayList] = useState(null)
   const[text, setText] = useState("")
 
-  const handleChange=(event)=> {
+  const handleChange = (event)=> {
     const newText = event.target.value;
     setText(newText)
   }
-const handleClick=()=>{setDisplayList(text)}
+const handleClick = ()=>{setDisplayList(text)}
 
 
   return (
-    <div className="App">
+    <div className ="App">
       <br></br>
       <Header></Header>
       <h1 className = "title">Student Hub</h1>
