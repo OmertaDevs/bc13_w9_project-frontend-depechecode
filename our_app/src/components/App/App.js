@@ -3,6 +3,7 @@ import Button from '../Button/button'
 import SubjectViewer from '../SubjectViewer/subjectviewer'
 
 import React, {useState} from "react"
+import Linkbar from '../Linkbar/linkbar'
 
 function App() {
   const[displayList, setDisplayList] = useState("")
@@ -23,8 +24,12 @@ function App() {
     <div className="App">
       <Button handleClick = {handleClick} text= "search"/>
       <SubjectViewer></SubjectViewer>
+      <Linkbar />
     </div>
+
+
   );
+  
 }
 
 export default App;
