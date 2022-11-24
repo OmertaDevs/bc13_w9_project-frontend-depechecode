@@ -4,7 +4,7 @@ const SubjectViewer = ({ displayList }) => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    async function getSubject() {
+    const getSubject = async()=>{
       const response = await fetch(
         `http://localhost:3000/api/v1/subject?search=${displayList}`,
         { headers: { accept: "application/json" } }
