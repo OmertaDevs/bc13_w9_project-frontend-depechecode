@@ -21,8 +21,10 @@ function App() {
 
   return (
     <div className="App">
-        <Header></Header>
-        <Button handleClick = {handleClick} handleChange = {handleChange}/>
+      <br></br>
+      <Header></Header>
+      <h1 className = "title">Student Hub</h1>
+      <Button handleClick = {handleClick} handleChange = {handleChange}/>
       <SubjectViewer displayList = {displayList}></SubjectViewer>
       <Linkbar/>
     </div>

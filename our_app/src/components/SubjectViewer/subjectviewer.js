@@ -14,8 +14,10 @@ function SubjectViewer({displayList}){
     },[displayList])
 return (
     <div className="content">
-         <h1>{data[0]?.subject_name}</h1>
+         <h1 className="subject-name">{data[0]?.subject_name}</h1>
+         <br></br>
         <p>{data[0]?.definition}</p>
+        <br></br>
         <h2>Useful Links</h2>
         
         <a href ={data[0]?.url} >{data[0]?.resource_name} </a>

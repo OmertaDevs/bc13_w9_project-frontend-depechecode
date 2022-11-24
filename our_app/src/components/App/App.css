@@ -2,17 +2,67 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  
 }
 .App {
-  align-content:center;
-  font-family: sans-serif;
+  
+  text-align:center;
+  font-family: arial;
   font-size: 40px;
   width: 100%;
   min-height: 100vh;
-
+  background-color: #ffff;
 display:flex;
 flex-direction:column;
-justify-content: center;
+justify-content: space-between;
 
+}
+h1{
+  color:#00000;
+  font-size: 60px;
+  font-family: 'PT Mono', monospace;
+  
+}
+h2{
+  color:#00000;
+  font-size: 50px;
+  font-family: 'PT Mono', monospace;
+}
+button {
+  background-color: #57B8FF;
+  transition-duration: 0.4s;
+  padding:10px;
+  font-family: 'PT Mono', monospace;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+p{
+  font-size: 25px;
+  color:#00000;
+  font-family: 'PT Mono', monospace;
+}
+input{
+  padding:8px;
+  width:400px;
+  font-size: 16px;
+  font-family: 'PT Mono', monospace;
+  border-width:2px;
+  border-radius: 5px;
+}
+.title{
+  font-family: 'Michroma', sans-serif;
+  font-size: 100px;
+}
+a{
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+}
+.subject-name{
+  text-decoration-line: underline;
+  color:#00000;
+  
 }

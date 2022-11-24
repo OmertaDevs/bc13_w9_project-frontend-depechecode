@@ -4,7 +4,7 @@ function Header() {
     return(
         <div className = "header-container">
             <img className = "soclogo"src = {logo} alt= "missing" ></img>
-            <h1 className = "banner">Depeche Code</h1>
+          
         </div>
     )
 }
