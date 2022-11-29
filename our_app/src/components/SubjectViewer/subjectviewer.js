@@ -10,7 +10,7 @@ const SubjectViewer = ({ displayList }) => {
         { headers: { accept: "application/json" } }
       );
       const data = await response.json();
-      setData(data);
+      setData(data.payload);
     }
     getSubject();
   }, [displayList]);
