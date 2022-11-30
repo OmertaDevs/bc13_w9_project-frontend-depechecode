@@ -5,7 +5,7 @@
  * @returns 
  */
 
-const Button = ({onClick, onChange})=> {
+const Search = ({onClick, onChange})=> {
     return(
         <div>
             <input onChange = {onChange} placeholder = "What do you want to recap?"></input>
@@ -14,4 +14,4 @@ const Button = ({onClick, onChange})=> {
     )
 }
 
-export default Button
+export default Search
