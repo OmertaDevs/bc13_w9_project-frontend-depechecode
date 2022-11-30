@@ -1,3 +1,10 @@
+/**
+ * Takes text as an input and sends it to the main app.
+ * @param {string} onClick - Allows button to be clickable.
+ * @param {string} onChange - This is tracking what the user puts into the input field.
+ * @returns 
+ */
+
 const Button = ({onClick, onChange})=> {
     return(
         <div>

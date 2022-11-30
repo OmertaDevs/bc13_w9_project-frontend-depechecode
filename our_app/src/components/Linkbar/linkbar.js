@@ -5,6 +5,12 @@ import NotionLogo from '../Images/notionlogo.png';
 import ZoomLogo from '../Images/Zoom-emblem.png';
 import './linkbar.css';
 
+/**
+ * Displays links to third party resources
+ * @const {string} Linkbar - Four buttons linking to github, slack, zoom and notion.
+ * @returns 
+ */
+
 const Linkbar = () => {
   return (
     <div className="Linkbar">

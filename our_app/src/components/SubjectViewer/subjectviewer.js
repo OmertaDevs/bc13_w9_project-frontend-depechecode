@@ -1,7 +1,20 @@
 import React, {useState, useEffect} from "react"
 
+/**
+ * Handles the fetch req and then renders the response.
+ * @param {} displayList - Value from the input field.
+ * @returns
+ *  
+ */
+
 const SubjectViewer = ({ displayList }) => {
   const [data, setData] = useState("");
+
+  /**
+   * Sends the fetch to our api
+   * @returns {promise <getSubject.getSubjectResponse}
+   */
+
 
   useEffect(() => {
     const getSubject = async()=>{

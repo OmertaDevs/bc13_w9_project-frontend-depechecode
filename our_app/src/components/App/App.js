@@ -1,8 +1,8 @@
 import React, {useState} from "react"
 import './App.css';
-import Button from '../Button/button'
+import Search from '../Search/search'
 import SubjectViewer from '../SubjectViewer/subjectviewer'
-import Header from "../Header/header.js"
+import SocLogo from "../SocLogo/soclogo.js"
 import Linkbar from '../Linkbar/linkbar'
 
 const App = ()=> {
@@ -19,9 +19,9 @@ const handleClick = ()=>{setDisplayList(text)}
   return (
     <div className ="App">
       <br></br>
-      <Header></Header>
+      <SocLogo></SocLogo>
       <h1 className = "title">Student Hub</h1>
-      <Button onClick = {handleClick} onChange = {handleChange}/>
+      <Search onClick = {handleClick} onChange = {handleChange}/>
       <SubjectViewer displayList = {displayList}></SubjectViewer>
       <Linkbar/>
     </div>
