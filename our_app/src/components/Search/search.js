@@ -7,9 +7,9 @@
 
 const Search = ({onClick, onChange})=> {
     return(
-        <div>
-            <input onChange = {onChange} placeholder = "What do you want to recap?"></input>
-            <button onClick = {onClick}>Search</button> 
+        <div className="flex justify-center">
+            <input className="border-box border-2 h-12 w-80 border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-xl text-center" onChange = {onChange} placeholder = "What do you want to recap?"></input>
+            <button className="border-box border-2 h-12 w-20 border-sky-900 bg-sky-400 hover:bg-emerald-500 text-sky-900 hover:text-sky-100 font-bold" onClick = {onClick}>GO</button> 
         </div>
     )
 }

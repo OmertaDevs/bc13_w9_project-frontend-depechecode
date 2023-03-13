@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import './App.css';
 import Search from '../Search/search'
 import SubjectViewer from '../SubjectViewer/subjectviewer'
 import SocLogo from "../SocLogo/soclogo.js"
@@ -17,14 +16,15 @@ const handleClick = ()=>{setDisplayList(text)}
 
 
   return (
-    <div className ="App">
-      <br></br>
+    <div className="flex flex-col justify-center items-center bg-sky-100 h-screen w-full">
+      
       <SocLogo></SocLogo>
-      <h1 className = "title">Student Hub</h1>
+      <h1 className = "text-8xl text-sky-900 p-10">Student Hub</h1>
       <Search onClick = {handleClick} onChange = {handleChange}/>
       <SubjectViewer displayList = {displayList}></SubjectViewer>
       <Linkbar/>
-    </div>
+     
+      </div>
   );
 }
 
