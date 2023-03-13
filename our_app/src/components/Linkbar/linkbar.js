@@ -1,9 +1,9 @@
 import React from 'react';
-import GitHubLogo from '../Images/GitHub-Mark-64px.png';
-import SlackLogo from '../Images/slacklogo.webp';
-import NotionLogo from '../Images/notionlogo.png';
-import ZoomLogo from '../Images/Zoom-emblem.png';
 import './linkbar.css';
+import { TbBrandZoom } from "react-icons/tb"
+import { SiNotion} from "react-icons/si"
+import {AiOutlineGithub, AiOutlineSlack } from "react-icons/ai"
+
 
 /**
  * Displays links to third party resources
@@ -14,19 +14,14 @@ import './linkbar.css';
 const Linkbar = () => {
   return (
     <div className="Linkbar">
-      <div className="link-container">
+      <div className="flex justify-center h-30 gap-5 bg-sky-400">
         <a
           className="git"
           href="https://github.com/"
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            border="0"
-            alt="GitHubLogo"
-            src={GitHubLogo}
-            width="100"
-            height="100"
+          <AiOutlineGithub className='border-4 p-2 border-sky-800 rounded-xl bg-sky-400 hover:bg-sky-300 hover:border-sky-100 text-8xl text-sky-900 hover:text-sky-100 shadow-md shadow-sky-900'
           />
         </a>
 
@@ -36,12 +31,7 @@ const Linkbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            border="0"
-            alt="SlackLogo"
-            src={SlackLogo}
-            width="100"
-            height="100"
+          <AiOutlineSlack className='border-4 p-2 border-sky-900 rounded-xl bg-sky-400 hover:bg-sky-300 hover:border-sky-100 text-8xl text-sky-900 hover:text-sky-100 shadow-md shadow-sky-900'
           />
         </a>
 
@@ -51,12 +41,7 @@ const Linkbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            border="0"
-            alt="NotionLogo"
-            src={NotionLogo}
-            width="100"
-            height="100"
+          <SiNotion className='border-4 p-2 border-sky-900 rounded-xl bg-sky-400 hover:bg-sky-300 hover:border-sky-100 text-8xl text-sky-900 hover:text-sky-100 shadow-md shadow-sky-900'
           />
         </a>
 
@@ -66,12 +51,7 @@ const Linkbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            border="0"
-            alt="ZoomLogo"
-            src={ZoomLogo}
-            width="100"
-            height="100"
+          <TbBrandZoom className='border-4 p-2 border-slate-800 rounded-xl bg-sky-400 hover:bg-sky-300 hover:border-sky-100 text-8xl text-slate-800 hover:text-sky-100 shadow-md shadow-sky-900'
           />
         </a>
       </div>
