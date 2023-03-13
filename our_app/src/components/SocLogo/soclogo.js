@@ -8,7 +8,7 @@ import "./soclogo.css"
 
 const SocLogo = ()=> {
     return(
-        <div className = "header-container">
+        <div className = "flex flex-col justify-center items-center">
             <img className = "soclogo"src = {logo} alt= "missing" ></img>
         </div>
     )
