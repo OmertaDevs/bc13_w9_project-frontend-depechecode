@@ -47,9 +47,9 @@ const Search = ()=> {
         return(
         <div className="flex flex-col items-center justify-center">
         <div className="flex justify-center">
-            <input className="font-Open border-box border-2 h-12 w-80 border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-xl text-center" 
+            <input className="font-Open border-box border-2 h-12 w-80 shadow-sm shadow-sky-900 rounded-sm border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-md text-center" 
             onChange = {handleChange} placeholder = "What do you want to recap?"></input>
-            <button className="font-Open border-box border-2 h-12 w-20 border-sky-900 bg-sky-400 hover:bg-emerald-500 text-sky-900 hover:text-sky-100 font-bold" onClick = {handleClick}>GO</button> 
+            <button className="font-Open border-box border-2 h-12 w-20 border-sky-900 shadow-sm shadow-sky-900 bg-sky-400 rounded-sm hover:bg-emerald-500 text-sky-900 hover:text-sky-100 font-bold" onClick = {handleClick}>GO</button> 
         </div>
             <div className="flex flex-col justify-center items-center"> 
             <SubjectViewer data={data}/>
