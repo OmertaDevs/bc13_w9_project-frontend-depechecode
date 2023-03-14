@@ -12,7 +12,7 @@ import {AiOutlineGithub, AiOutlineSlack } from "react-icons/ai"
 
 const Linkbar = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 h-30 w-full">
+    <div className=" h-30 w-full">
     
       <div className="flex justify-center items-center h-30 p-2 w-full gap-5 bg-sky-400">
         <a
