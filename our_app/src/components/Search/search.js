@@ -4,13 +4,51 @@
  * @param {string} onChange - This is tracking what the user puts into the input field.
  * @returns 
  */
+import React, {useState, useEffect} from "react"
+import SubjectViewer from "../SubjectViewer/subjectviewer";
 
-const Search = ({onClick, onChange})=> {
-    return(
+/**
+ * Sends the fetch to our api
+ * @returns {promise <getSubject.getSubjectResponse}
+*/
+
+const Search = ()=> {
+    const [displayList, setDisplayList] = useState(null)
+    const [text, setText] = useState("")
+    const [data, setData] = useState("");
+    
+    useEffect(() => {
+        const getSubject = async()=>{
+            const response = await fetch(
+                `http://localhost:3000/api/v1/subject?search=${displayList}`,
+                { headers: { accept: "application/json" } }
+                );
+                const data = await response.json();
+               
+                setData(data.payload);
+            }
+            getSubject();
+        }, [displayList]);
+
+        const handleChange = (event)=> {
+            const newText = event.target.value;
+            setText(newText)
+          }
+
+        const handleClick = ()=>{setDisplayList(text)}
+
+        return(
+        <div className="flex flex-col items-center justify-center">
         <div className="flex justify-center">
-            <input className="border-box border-2 h-12 w-80 border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-xl text-center" onChange = {onChange} placeholder = "What do you want to recap?"></input>
-            <button className="border-box border-2 h-12 w-20 border-sky-900 bg-sky-400 hover:bg-emerald-500 text-sky-900 hover:text-sky-100 font-bold" onClick = {onClick}>GO</button> 
+            <input className="font-Open border-box border-2 h-12 w-80 border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-xl text-center" 
+            onChange = {handleChange} placeholder = "What do you want to recap?"></input>
+            <button className="font-Open border-box border-2 h-12 w-20 border-sky-900 bg-sky-400 hover:bg-emerald-500 text-sky-900 hover:text-sky-100 font-bold" onClick = {handleClick}>GO</button> 
         </div>
+            <div className="flex flex-col justify-center items-center"> 
+            <SubjectViewer data={data}/>
+            </div>
+        </div>
+        
     )
 }
 
