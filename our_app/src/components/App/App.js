@@ -7,8 +7,8 @@ const App = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-sky-100 h-screen w-full">
       <SocLogo />
-      <Search />
       <Linkbar />
+      <Search />
     </div>
   );
 };

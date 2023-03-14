@@ -8,17 +8,18 @@ import React from "react";
  */
 const SubjectViewer = ({ data }) => {
   return (
-    <div className="flex flex-col justify-center items-center p-10 w-6/12">
+    <div className="flex flex-col justify-center items-center p-10 w-8/12 md:w-6/12">
       <h1 className="font-Open text-2xl text-sky-700 pb-4">
         {data[0]?.subject_name.toUpperCase()}
       </h1>
-      <p className="font-Open text-lg text-left text-slate-900 p-4">
+      <p className="font-Open text-lg text-slate-900 p-4">
         {data[0]?.definition}
       </p>
+      <div className="flex flex-col">
       {data ? (
         data.map((item) => (
           <a
-            className="underline font-Open text-sky-600 text-lg hover:text-emerald-500 "
+            className="underline font-Open text-sky-600 text-lg hover:text-emerald-500 visited:text-indigo-500"
             key={data.indexOf(item)}
             href={item?.url}
           >
@@ -27,7 +28,8 @@ const SubjectViewer = ({ data }) => {
         ))
       ) : (
         <p className="font-light font-Open text-sky-600 text-md">Loading...</p>
-      )}
+        )}
+        </div>
     </div>
   );
 };

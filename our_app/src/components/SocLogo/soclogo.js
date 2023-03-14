@@ -15,7 +15,7 @@ const SocLogo = () => {
         height="300"
         width="300"
       ></img>
-      <h1 className="font-Open font-semibold text-8xl text-sky-900 p-10">
+      <h1 className="font-Open font-semibold text-6xl md:text-8xl text-sky-900 pt-10">
         Student Hub
       </h1>
     </div>
