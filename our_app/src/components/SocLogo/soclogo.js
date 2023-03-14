@@ -10,7 +10,7 @@ const SocLogo = ()=> {
     return (
         <div className = "flex flex-col justify-center items-center pt-20">
     
-            <img className = "soclogo"src = {logo} alt= "missing" height='400'></img>
+            <img className = "soclogo"src = {logo} alt= "missing" height='300' width="300"></img>
         
         </div>
     )

@@ -13,12 +13,11 @@ const SubjectViewer = ({ data }) => {
         {data[0]?.subject_name}
       </h1>
       <p className="font-Open text-md text-slate-900">{data[0]?.definition}</p>
-      <h2 className="font-Open text-sky-700 text-2xl p-4">Useful Links</h2>
       {data? data.map((item) => (
         <a className="underline" key={data.indexOf(item)} href={item?.url}>
           {item?.resource_name}
         </a>
-      )):<p>No data</p> }
+      )):<p>Loading...</p> }
     </div>
   );
 };

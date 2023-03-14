@@ -13,20 +13,24 @@ import SubjectViewer from "../SubjectViewer/subjectviewer";
 */
 
 const Search = ()=> {
-    const [displayList, setDisplayList] = useState(null)
-    const [text, setText] = useState("")
+    const [displayList, setDisplayList] = useState("empty")
+    const [text, setText] = useState("empty")
     const [data, setData] = useState("");
     
     useEffect(() => {
         const getSubject = async()=>{
+            if(displayList===""){
+                setData([])
+            }
+            else {
             const response = await fetch(
                 `http://localhost:3000/api/v1/subject?search=${displayList}`,
                 { headers: { accept: "application/json" } }
                 );
                 const data = await response.json();
                
-                setData(data.payload);
-            }
+                setData(data.payload)
+                }}
             getSubject();
         }, [displayList]);
 
@@ -35,7 +39,10 @@ const Search = ()=> {
             setText(newText)
           }
 
-        const handleClick = ()=>{setDisplayList(text)}
+        const handleClick = ()=>{setDisplayList(text)
+            console.log(text)
+        }
+        
 
         return(
         <div className="flex flex-col items-center justify-center">
