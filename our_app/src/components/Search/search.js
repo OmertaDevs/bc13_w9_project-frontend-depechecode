@@ -45,7 +45,7 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-10">
       <div className="flex justify-center">
         <input
           className="font-Open border-box border-2 h-12 w-80 shadow-sm shadow-sky-900 rounded-sm border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-md text-center placeholder:text-slate-400 placeholder:font-light"
