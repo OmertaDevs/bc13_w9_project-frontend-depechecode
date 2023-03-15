@@ -14,7 +14,7 @@ import SubjectViewer from "../SubjectViewer/subjectviewer";
 
 const Search = () => {
   const [displayList, setDisplayList] = useState("empty");
-  const [text, setText] = useState("empty");
+  const [text, setText] = useState("");
   const [data, setData] = useState("");
 
   useEffect(() => {
@@ -41,13 +41,13 @@ const Search = () => {
 
   const handleClick = () => {
     setDisplayList(text);
-    console.log(text);
+    setText("");
   };
 
   return (
     <div className="flex flex-col items-center justify-center pt-10">
       <div className="flex justify-center">
-        <input
+              <input  value={text}
           className="font-Open border-box border-2 h-12 w-80 shadow-sm shadow-sky-900 rounded-sm border-sky-900 placeholder-slate-400 bg-slate-50 text-sky-700 text-md text-center placeholder:text-slate-400 placeholder:font-light"
           onChange={handleChange}
           placeholder="What do you want to recap?"
