@@ -6,9 +6,9 @@ import Linkbar from "../Linkbar/linkbar";
 const App = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-sky-100 h-screen w-full">
+      <Linkbar />
       <SocLogo />
       <Search />
-      <Linkbar />
     </div>
   );
 };
