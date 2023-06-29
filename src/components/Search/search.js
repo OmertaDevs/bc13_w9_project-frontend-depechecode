@@ -7,6 +7,7 @@
 import React, { useState, useEffect } from "react";
 import SubjectViewer from "../SubjectViewer/subjectviewer";
 
+
 /**
  * Sends the fetch to our api
  * @returns {promise <getSubject.getSubjectResponse}
@@ -23,7 +24,7 @@ const Search = () => {
         setData([]);
       } else {
         const response = await fetch(
-          `http://localhost:3000/api/v1/subject?search=${displayList}`,
+          `${process.env.REACT_APP_BACKEND_API}/subject?search=${displayList}`,
           { headers: { accept: "application/json" } }
         );
         const data = await response.json();

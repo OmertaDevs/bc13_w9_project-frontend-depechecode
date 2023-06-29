@@ -7,7 +7,7 @@ import logo from "./logo-51c754388b198e5bbb0d08a971ebbfa2.png";
 
 const SocLogo = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-20">
+    <div className="flex flex-col justify-center items-center pt-10">
       <img
         className="soclogo"
         src={logo}
@@ -18,7 +18,8 @@ const SocLogo = () => {
       <h1 className="font-Open font-semibold text-6xl md:text-8xl text-sky-900 pt-10">
         Student Hub
       </h1>
-    </div>
+      </div>
+      
   );
 };
 

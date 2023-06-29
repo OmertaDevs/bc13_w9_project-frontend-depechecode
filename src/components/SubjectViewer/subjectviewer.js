@@ -8,6 +8,7 @@ import React from "react";
  */
 const SubjectViewer = ({ data }) => {
   return (
+    
     <div className="flex flex-col justify-center items-center p-10 w-8/12 md:w-6/12">
       <h1 className="font-Open text-2xl text-sky-700 pb-4">
         {data[0]?.subject_name.toUpperCase()}
@@ -30,7 +31,8 @@ const SubjectViewer = ({ data }) => {
         <p className="font-light font-Open text-sky-600 text-md">Loading...</p>
         )}
         </div>
-    </div>
+      </div>
+     
   );
 };
 export default SubjectViewer;

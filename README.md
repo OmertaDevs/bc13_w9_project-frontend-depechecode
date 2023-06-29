@@ -1,80 +1,70 @@
-# School of Code Hub
+# Getting Started with Create React App
 
-The product is an application aiming to simplify the lives of school of code bootcampers.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The core concepts behind the application are:
+## Available Scripts
 
-. An easy to use search feature which will return a glossary definition and useful tech links to the user.
+In the project directory, you can run:
 
-. Easy access to the tools that a student uses on a daily basis such as Zoom, Notion, Slack and Github.
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The over all aim is to streamline the user experience so that instead of having several applications covering these areas this application will pool together all resources and tools so that they can be easily accessed from one location.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Authors
+### `npm run build`
 
-- [@OmertaDevs](https://github.com/OmertaDevs)
-- [@Mrbusy13](https://github.com/Mrbusy13)
-- [@gregrutnam](https://github.com/gregrutnam)
-- [@Cristhyan1993](https://github.com/Cristhyan1993)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## API Reference
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### Get all items
+### `npm run eject`
 
-```http
-  GET /api/v1/subject
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-|  | `string` |  |
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### Get item
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```http
-  GET /api/v1/subject?search=${subject}
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `search`      | `string` | **Required**. Name of subject to fetch |
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-## Environment Variables
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-To run this project, you will need to add the following environment variables to your .env file
+### Analyzing the Bundle Size
 
-`POSTGRES_CONNECTION_URL`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-`PORT`
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Features
+### Advanced Configuration
 
-- Search capability for all subjects listed within the database.
-- Active relevant links for each subject returned to the user from our curated list of resources.
-- Active links to the common tools required by the students.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Features (Under Development)
+### Deployment
 
-- Light/dark mode toggle.
-- POST request adding new subjects to the list.
-- POST request adding new links to the existing subjects.
-- PATCH request updating links. 
-- ERROR CATCH when entering a subject name that doesnt exist an error message will display which will make a suggestion to the user to se if they would like to add a new entry to the database.
-- DB ROUTING if the database goes down or isnt responsive the server of the database will be switched to an active server.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Running Tests
+### `npm run build` fails to minify
 
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
