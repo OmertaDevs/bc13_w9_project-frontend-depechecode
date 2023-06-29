@@ -7,7 +7,7 @@ import logo from "./logo-51c754388b198e5bbb0d08a971ebbfa2.png";
 
 const SocLogo = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-10">
+    <div className="flex flex-col justify-center items-center">
       <img
         className="soclogo"
         src={logo}

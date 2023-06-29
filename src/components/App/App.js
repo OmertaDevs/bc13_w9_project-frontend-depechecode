@@ -5,10 +5,14 @@ import Linkbar from "../Linkbar/linkbar";
 
 const App = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-sky-100 h-screen w-full">
-      <Linkbar />
-      <SocLogo />
-      <Search />
+    <div className="h-screen flex flex-col bg-sky-100">
+      <div className="flex-1 flex flex-col justify-center items-center">
+        <SocLogo />
+        <Search />
+      </div>
+      <div className="bg-sky-100">
+        <Linkbar />
+      </div>
     </div>
   );
 };
